@@ -1,0 +1,2 @@
+syncthing:
+  running: False

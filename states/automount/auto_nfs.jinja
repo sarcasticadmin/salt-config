@@ -1,0 +1,3 @@
+{% for mountpoint, config in mountpoints.iteritems() -%}
+{{ mountpoint }} -{{ config['options'] }} {{ config['remote'] }}
+{% endfor -%}
