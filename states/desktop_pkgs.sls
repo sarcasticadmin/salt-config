@@ -29,6 +29,7 @@ desktop_pkgs:
       - ImageMagick-nox11
       - darktable
       - xpdf
+      - xrandr
     - require:
       - sls: pkgs
 

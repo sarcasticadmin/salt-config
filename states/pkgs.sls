@@ -17,6 +17,8 @@ pkg_list:
       # latex
       - rubber
       - rsync
+      - expect
+      - py27-iocage
     - require:
       - file: /etc/pkg/FreeBSD.conf
 
