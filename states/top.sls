@@ -13,6 +13,7 @@ base:
     - openssh
     - syncthing
     - virtualenvs
+    - zfsnap
   'robs-desktop':
     # Because I need to build my own gnupg pkg
     - gnupg
