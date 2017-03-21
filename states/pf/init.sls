@@ -3,7 +3,10 @@ pf:
     - enable: True
   file.managed:
     - name: /etc/pf.conf
-    - source: salt://{{ tpldir }}/pf.conf
+    - template: jinja
+    - source: salt://{{ tpldir }}/pf.conf.jinja
+    - context:
+        interfaces: {{ salt['pillar.get']('pf:interfaces', ['re0']) }}
     - listen_in:
       - service: pf
   # This is already set in /etc/defaults/rc.conf

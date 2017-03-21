@@ -4,3 +4,4 @@ base:
     - automount
     - openssh
     - syncthing
+    - pf

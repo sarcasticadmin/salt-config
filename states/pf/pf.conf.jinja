@@ -1,4 +1,8 @@
-ext_if = "wlan0"
+{%- if interfaces|length > 1 -%}
+ext_if = "{ {{ interfaces|join(', ') }} }"
+{% else -%}
+ext_if = "{{ interfaces[0] }}"
+{% endif -%}
 tcp_pass = "{ 22000 }"
 udp_pass = "{ 21027 }"
 set block-policy drop
