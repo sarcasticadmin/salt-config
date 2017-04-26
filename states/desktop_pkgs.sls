@@ -30,6 +30,8 @@ desktop_pkgs:
       - darktable
       - xpdf
       - xrandr
+      # Term session recording
+      - ttygif
     - require:
       - sls: pkgs
 
