@@ -31,7 +31,9 @@ desktop_pkgs:
       - xpdf
       - xrandr
       # Term session recording
+      - xwd # Wont need after bug fix
       - ttygif
+      - ttyrec
     - require:
       - sls: pkgs
 
