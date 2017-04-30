@@ -16,6 +16,8 @@ py27-salt:
     - contents: |
         file_client: local
         state_output: terse
+        jinja_trim_blocks: True
+        jinja_lstrip_blocks: True
     - user: root
     - group: wheel
     - mode: 644
