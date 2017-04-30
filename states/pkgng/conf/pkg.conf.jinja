@@ -1,0 +1,11 @@
+{{ repo_name }}: {
+  url: "{{ url }}"
+  mirror_type: "{{ mirror_type }}",
+  signature_type: "{{ signature_type }}",
+  {% if signature_type == "pubkey" %}
+  pubkey: "{{ pubkey }}",
+  {% endif %}
+  fingerprints: "{{ fingerprints }}",
+  enabled: {{ enabled }},
+  priority: {{ priority }}
+}
