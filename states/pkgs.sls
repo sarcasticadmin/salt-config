@@ -20,7 +20,7 @@ pkg_list:
       - expect
       - py27-iocage
     - require:
-      - file: /etc/pkg/FreeBSD.conf
+      - sls: pkgng
 
 
 /etc/sysctl.conf:

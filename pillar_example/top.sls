@@ -1,6 +1,7 @@
 base:
   '*':
     - user
+    - pkgng
     - automount
     - openssh
     - syncthing
