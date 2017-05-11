@@ -1,5 +1,6 @@
 /usr/local/etc/pkg/repos:
   file.directory:
+    - makedirs: True
     - user: root
     - group: wheel
     - mode: 755

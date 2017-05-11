@@ -8,5 +8,6 @@
     - groups:
       - wheel
       - operator
+      - video
     - require:
       - sls: pkgs
