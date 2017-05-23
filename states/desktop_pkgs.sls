@@ -26,7 +26,7 @@ desktop_pkgs:
       # Image viewer
       - viewnior
       # Picture stuff
-      - ImageMagick-nox11
+      - ImageMagick
       - darktable
       - ufraw
       - xpdf
