@@ -1,7 +1,7 @@
 /usr/local/etc/doas.conf:
   file.managed:
     - contents: |
-        permit nopass keepenv { PS1 SSH_AUTH_SOCK } :wheel
+        permit nopass keepenv :wheel
     - mode: 600
     - user: root
     - group: wheel
