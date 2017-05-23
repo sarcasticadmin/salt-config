@@ -28,6 +28,7 @@ desktop_pkgs:
       # Picture stuff
       - ImageMagick-nox11
       - darktable
+      - ufraw
       - xpdf
       - xrandr
       # Term session recording

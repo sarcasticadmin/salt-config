@@ -5,6 +5,7 @@ base:
     - pkgs
     - salt
     - desktop_pkgs
+    - custom_pkgs
     - doas
     - users
     - slim
