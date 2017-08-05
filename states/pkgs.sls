@@ -19,6 +19,8 @@ pkg_list:
       - rsync
       - expect
       - py27-iocage
+      # Task Spooler
+      - ts
     - require:
       - sls: pkgng
 
