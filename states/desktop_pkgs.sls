@@ -35,6 +35,7 @@ desktop_pkgs:
       - xwd # Wont need after bug fix
       - ttygif
       - ttyrec
+      - exfat-utils
     - require:
       - sls: pkgs
 
