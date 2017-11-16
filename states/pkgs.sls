@@ -10,6 +10,7 @@ pkg_list:
       # Terminal emulator
       - rxvt-unicode
       - git-lite
+      - git-lfs
       - stow
       - py27-virtualenv
       - newsbeuter
