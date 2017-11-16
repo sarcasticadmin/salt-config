@@ -18,6 +18,7 @@ pkg_list:
       - rubber
       - rsync
       - expect
+      - the_silver_searcher
       - py27-iocage
       # Task Spooler
       - ts
