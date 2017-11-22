@@ -36,6 +36,11 @@ desktop_pkgs:
       - ttygif
       - ttyrec
       - exfat-utils
+      # mail client
+      - claws-mail
+      - claws-mail-fancy
+      - claws-mail-archiver
+      - en-hunspell
     - require:
       - sls: pkgs
 
