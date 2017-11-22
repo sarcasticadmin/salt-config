@@ -1,5 +1,5 @@
 syncthing:
-  pkg.latest:
+  pkg.installed:
     - require:
       - sls: pkgs
 {% if salt['pillar.get']('sycnthing:running', False) %}

@@ -3,7 +3,7 @@ ntpd:
     - enable: False
 
 openntpd:
-  pkg.latest: []
+  pkg.installed: []
   service.running:
     - enable: True
     - require:

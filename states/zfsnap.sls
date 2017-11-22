@@ -1,7 +1,7 @@
 {% set hourly_zfs_filesystems = ['zroot/ROOT', 'zroot/usr', 'zroot/var/log'] %}
 
 zfsnap:
-  pkg.latest: []
+  pkg.installed: []
 
 hourly_snapshots:
   cron.present:
