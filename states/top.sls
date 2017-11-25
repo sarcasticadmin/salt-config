@@ -1,5 +1,6 @@
 base:
   '*':
+    - base_system
     - zfs
     - pf
     - pkgs

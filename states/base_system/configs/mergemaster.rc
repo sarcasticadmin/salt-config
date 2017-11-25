@@ -1,0 +1,4 @@
+# Additional options for diff.  This will get unset when using -s.
+DIFF_OPTIONS='-I$FreeBSD:.*[$]'	     # Ignores CVS Id tags
+
+IGNORE_FILES='/etc/motd /etc/ssh/sshd_config'
