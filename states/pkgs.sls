@@ -13,7 +13,7 @@ pkg_list:
       - git-lfs
       - stow
       - py27-virtualenv
-      - newsbeuter
+      - newsboat
       - doas
       # latex
       - rubber
@@ -26,6 +26,12 @@ pkg_list:
     - require:
       - sls: pkgng
 
+removed_pkgs:
+  pkg.removed:
+    - pkgs:
+      - newsbeuter
+    - require:
+      - sls: pkgng
 
 /etc/sysctl.conf:
   file.managed:
