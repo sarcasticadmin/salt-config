@@ -33,11 +33,9 @@ removed_pkgs:
     - require:
       - sls: pkgng
 
-/etc/sysctl.conf:
-  file.managed:
-    - source: salt://sysctl.conf
-    - user: root
-    - group: wheel
-    - mode: 644
+# Chrome required sysctl
+kern.ipc.shm_allow_removed:
+  sysctl.present:
+    - value: 1
     - require:
       - pkg: pkg_list
