@@ -6,3 +6,4 @@ base:
     - openssh
     - syncthing
     - pf
+    - iohyve
