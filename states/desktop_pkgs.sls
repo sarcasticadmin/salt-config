@@ -1,3 +1,6 @@
+include:
+    - pkgng
+
 desktop_pkgs:
   pkg.installed:
     - pkgs:
@@ -29,7 +32,7 @@ desktop_pkgs:
       - ImageMagick
       - darktable
       - ufraw
-      - xpdf
+      - xpdf3
       - xrandr
       # Term session recording
       - xwd # Wont need after bug fix
@@ -43,6 +46,23 @@ desktop_pkgs:
       - en-hunspell
     - require:
       - sls: pkgs
+
+# Chromium required sysctl
+kern.ipc.shm_allow_removed:
+  sysctl.present:
+    - value: 1
+    - require:
+      - pkg: desktop_pkgs
+
+
+removed_pkgs:
+  pkg.removed:
+    - pkgs:
+      - newsbeuter  # Moving to newsboat
+      - xpdf  # xpdf 4.x requires qt5, staying on xpdf3
+    - require:
+      - sls: pkgng
+
 
 # Enable X and i3
 dbus:

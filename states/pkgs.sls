@@ -13,7 +13,6 @@ pkg_list:
       - git-lfs
       - stow
       - py27-virtualenv
-      - newsboat
       - doas
       # latex
       - rubber
@@ -25,17 +24,3 @@ pkg_list:
       - ts
     - require:
       - sls: pkgng
-
-removed_pkgs:
-  pkg.removed:
-    - pkgs:
-      - newsbeuter
-    - require:
-      - sls: pkgng
-
-# Chrome required sysctl
-kern.ipc.shm_allow_removed:
-  sysctl.present:
-    - value: 1
-    - require:
-      - pkg: pkg_list
