@@ -46,6 +46,7 @@ desktop_pkgs:
       - en-hunspell
     - require:
       - sls: pkgs
+      - pkg: removed_desktop_pkgs
 
 # Chromium required sysctl
 kern.ipc.shm_allow_removed:
@@ -55,7 +56,7 @@ kern.ipc.shm_allow_removed:
       - pkg: desktop_pkgs
 
 
-removed_pkgs:
+removed_desktop_pkgs:
   pkg.removed:
     - pkgs:
       - newsbeuter  # Moving to newsboat

@@ -9,7 +9,7 @@ pkg_list:
       - bash
       # Terminal emulator
       - rxvt-unicode
-      - git-lite
+      - git
       - git-lfs
       - stow
       - py27-virtualenv
@@ -22,5 +22,13 @@ pkg_list:
       - py27-iocage
       # Task Spooler
       - ts
+    - require:
+      - sls: pkgng
+      - pkg: removed_pkgs
+
+removed_pkgs:
+  pkg.removed:
+    - pkgs:
+      - git-lite
     - require:
       - sls: pkgng
