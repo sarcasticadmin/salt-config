@@ -44,6 +44,7 @@ desktop_pkgs:
       - claws-mail-fancy
       - claws-mail-archiver
       - en-hunspell
+      - newsboat
     - require:
       - sls: pkgs
       - pkg: removed_desktop_pkgs
