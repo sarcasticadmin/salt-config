@@ -45,6 +45,8 @@ desktop_pkgs:
       - claws-mail-archiver
       - en-hunspell
       - newsboat
+      # Fonts
+      - emojione-color-font-ttf
     - require:
       - sls: pkgs
       - pkg: removed_desktop_pkgs
