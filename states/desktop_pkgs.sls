@@ -1,5 +1,6 @@
 include:
     - pkgng
+    - pkgs
 
 desktop_pkgs:
   pkg.installed:
