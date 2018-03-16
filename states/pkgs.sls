@@ -19,7 +19,6 @@ pkg_list:
       - rsync
       - expect
       - the_silver_searcher
-      - py27-iocage
       # Task Spooler
       - ts
     - require:
@@ -30,5 +29,6 @@ removed_pkgs:
   pkg.removed:
     - pkgs:
       - git-lite
+      - py27-iocage
     - require:
       - sls: pkgng
