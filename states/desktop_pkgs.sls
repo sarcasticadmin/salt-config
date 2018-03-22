@@ -33,7 +33,9 @@ desktop_pkgs:
       - ImageMagick
       - darktable
       - ufraw
-      - xpdf3
+      # PDF Viewer
+      - zathura
+      - zathura-pdf-poppler
       - xrandr
       # Term session recording
       - xwd # Wont need after bug fix
@@ -65,6 +67,7 @@ removed_desktop_pkgs:
     - pkgs:
       - newsbeuter  # Moving to newsboat
       - xpdf  # xpdf 4.x requires qt5, staying on xpdf3
+      - xpdf3 # Found a better alternative in zathura
     - require:
       - sls: pkgng
 
