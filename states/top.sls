@@ -15,6 +15,7 @@ base:
     - syncthing
     - virtualenvs
     - zfsnap
+    - dsbmd
   'robs-desktop':
     # Because I need to build my own gnupg pkg
     - gnupg

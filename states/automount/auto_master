@@ -1,3 +1,2 @@
 # NFS Shares
 /mnt/nfs        /etc/auto_nfs
-/media          -media          -nosuid,noatime
