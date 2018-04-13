@@ -19,5 +19,7 @@ base:
   'robs-desktop':
     # Because I need to build my own gnupg pkg
     - gnupg
+    - ruby
   'robs-laptop':
     - iohyve
+    - ruby
