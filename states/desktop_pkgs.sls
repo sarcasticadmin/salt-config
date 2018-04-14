@@ -50,6 +50,7 @@ desktop_pkgs:
       - newsboat
       # Fonts
       - emojione-color-font-ttf
+      - weechat
     - require:
       - sls: pkgs
       - pkg: removed_desktop_pkgs
