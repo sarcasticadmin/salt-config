@@ -51,6 +51,8 @@ desktop_pkgs:
       # Fonts
       - emojione-color-font-ttf
       - weechat
+      - hs-ShellCheck
+      - graphviz
     - require:
       - sls: pkgs
       - pkg: removed_desktop_pkgs
