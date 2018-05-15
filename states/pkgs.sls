@@ -21,6 +21,7 @@ pkg_list:
       - the_silver_searcher
       # Task Spooler
       - ts
+      - tree
     - require:
       - sls: pkgng
       - pkg: removed_pkgs
