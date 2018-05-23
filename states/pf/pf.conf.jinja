@@ -14,10 +14,6 @@ set skip on lo0
 scrub in all no-df random-id max-mss 1440
 antispoof quick for ($ext_if)
 
-# No need for IPv6 for now
-block return out quick inet6 all
-block in quick inet6 all
-
 # Childrens table is for annoying people
 table <childrens> persist
 block in quick proto tcp from <childrens> to any
