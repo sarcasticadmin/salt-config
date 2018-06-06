@@ -20,6 +20,8 @@ base:
     # Because I need to build my own gnupg pkg
     - gnupg
     - ruby
+    - golang
   'robs-laptop':
     - iohyve
     - ruby
+    - golang
