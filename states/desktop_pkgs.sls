@@ -53,6 +53,7 @@ desktop_pkgs:
       - weechat
       - hs-ShellCheck
       - graphviz
+      - libqrencode
     - require:
       - sls: pkgs
       - pkg: removed_desktop_pkgs
