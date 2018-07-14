@@ -1,3 +1,6 @@
+include:
+  - .plugins
+
 /usr/local/etc/pkg/repos:
   file.directory:
     - makedirs: True
