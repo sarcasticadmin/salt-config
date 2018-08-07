@@ -17,11 +17,13 @@ base:
     - zfsnap
     - dsbmd
   'robs-desktop':
-    # Because I need to build my own gnupg pkg
+    - users.desktop
     - gnupg
     - ruby
     - golang
   'robs-laptop':
+    - users.desktop
+    - gnupg
     - iohyve
     - ruby
     - golang

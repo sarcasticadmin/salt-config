@@ -1,3 +1,6 @@
+include:
+  - pkgs
+
 {{ salt['pillar.get']('user:name', 'minion') }}:
   user.present:
     - fullname: {{ salt['pillar.get']('user:fullname', None) }}
