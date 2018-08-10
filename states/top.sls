@@ -21,9 +21,13 @@ base:
     - gnupg
     - ruby
     - golang
+    - google.kube
+    - google.sdk
   'robs-laptop':
     - users.desktop
     - gnupg
     - iohyve
     - ruby
     - golang
+    - google.kube
+    - google.sdk
