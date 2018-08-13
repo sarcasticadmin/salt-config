@@ -22,6 +22,7 @@ pkg_list:
       # Task Spooler
       - ts
       - tree
+      - jq
     - require:
       - sls: pkgng
       - pkg: removed_pkgs
