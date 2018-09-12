@@ -54,6 +54,7 @@ desktop_pkgs:
       - hs-ShellCheck
       - graphviz
       - libqrencode
+      - gomplate
     - require:
       - sls: pkgs
       - pkg: removed_desktop_pkgs
