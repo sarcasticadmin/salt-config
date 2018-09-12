@@ -23,6 +23,7 @@ pkg_list:
       - ts
       - tree
       - jq
+      - cloc
     - require:
       - sls: pkgng
       - pkg: removed_pkgs
