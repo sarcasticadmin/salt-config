@@ -24,6 +24,7 @@ pkg_list:
       - tree
       - jq
       - cloc
+      - nmap
     - require:
       - sls: pkgng
       - pkg: removed_pkgs
