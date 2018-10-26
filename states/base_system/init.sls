@@ -22,3 +22,7 @@ rtsold:
   sysrc.managed:
     - name: rtsold_enable
     - value: "YES"
+
+devd:
+  service.running:
+    - enable: True

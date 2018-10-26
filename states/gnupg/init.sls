@@ -1,3 +1,6 @@
+include:
+  - .nitrokey
+
 gnupg:
   pkg.installed: []
 
