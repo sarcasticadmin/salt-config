@@ -5,6 +5,10 @@ ext_if = "{{ interfaces[0] }}"
 {% endif -%}
 tcp_pass = "{ 22000 }"
 udp_pass = "{ 21027 }"
+{% if iohyve_bool -%}
+set skip on bridge0
+set skip on tap0
+{% endif -%}
 set block-policy drop
 
 # Loopback is ok
