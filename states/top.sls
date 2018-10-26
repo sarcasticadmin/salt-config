@@ -23,6 +23,7 @@ base:
     - golang
     - google.kube
     - google.sdk
+    - iohyve
   'robs-laptop':
     - users.desktop
     - gnupg
