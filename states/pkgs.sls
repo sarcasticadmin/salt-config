@@ -25,6 +25,7 @@ pkg_list:
       - jq
       - cloc
       - nmap
+      - aria2
     - require:
       - sls: pkgng
       - pkg: removed_pkgs
