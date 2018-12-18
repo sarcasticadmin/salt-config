@@ -55,6 +55,7 @@ desktop_pkgs:
       - graphviz
       - libqrencode
       - gomplate
+      - hub
     - require:
       - sls: pkgs
       - pkg: removed_desktop_pkgs
