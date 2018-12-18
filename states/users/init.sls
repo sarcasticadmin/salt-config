@@ -12,5 +12,6 @@ include:
       - wheel
       - operator
       - video
+      - uucp # For serial
     - require:
       - sls: pkgs
