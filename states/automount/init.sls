@@ -1,12 +1,6 @@
-automount:
-  service.running:
-    - reload: False
-
 automountd:
   service.running:
     - reload: False
-    - watch:
-        - service: automount
 
 autounmountd:
   service.running:
@@ -30,18 +24,18 @@ autounmountd:
     - require:
         - file: /mnt/nfs
     - watch_in:
-        - service: automount
+        - service: automountd
 
 /etc/auto_nfs:
   file.managed:
     - source: salt://{{ tpldir }}/auto_nfs.jinja
     - template: jinja
     - context:
-        mountpoints: {{ salt['pillar.get']('nfs_mountpoints', {}) }}
+        mountpoints: {{ salt['pillar.get']('nfs_mountpoints', {}) | json_decode_dict }}
     - user: root
     - group: wheel
     - mode: 644
     - require:
         - file: /etc/auto_master
     - watch_in:
-        - service: automount
+        - service: automountd
