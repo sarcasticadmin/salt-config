@@ -1,12 +1,6 @@
-automount:
-  service.running:
-    - reload: False
-
 automountd:
   service.running:
     - reload: False
-    - watch:
-        - service: automount
 
 autounmountd:
   service.running:
@@ -30,7 +24,7 @@ autounmountd:
     - require:
         - file: /mnt/nfs
     - watch_in:
-        - service: automount
+        - service: automountd
 
 /etc/auto_nfs:
   file.managed:
@@ -44,4 +38,4 @@ autounmountd:
     - require:
         - file: /etc/auto_master
     - watch_in:
-        - service: automount
+        - service: automountd
