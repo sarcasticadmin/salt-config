@@ -17,6 +17,7 @@ base:
     - zfsnap
     - dsbmd
   'robs-desktop':
+    - intel
     - users.desktop
     - gnupg
     - ruby
@@ -25,6 +26,7 @@ base:
     - google.sdk
     - iohyve
   'robs-laptop':
+    - intel
     - users.desktop
     - gnupg
     - iohyve
