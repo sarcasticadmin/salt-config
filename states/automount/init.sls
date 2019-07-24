@@ -31,7 +31,7 @@ autounmountd:
     - source: salt://{{ tpldir }}/auto_nfs.jinja
     - template: jinja
     - context:
-        mountpoints: {{ salt['pillar.get']('nfs_mountpoints', {}) }}
+        mountpoints: {{ salt['pillar.get']('nfs_mountpoints', {}) | json_decode_dict }}
     - user: root
     - group: wheel
     - mode: 644
