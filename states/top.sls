@@ -29,7 +29,6 @@ base:
     - intel
     - users.desktop
     - gnupg
-    - iohyve
     - ruby
     - golang
     - google.kube
