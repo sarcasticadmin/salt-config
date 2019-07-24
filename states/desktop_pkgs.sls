@@ -37,15 +37,8 @@ desktop_pkgs:
       - zathura
       - zathura-pdf-poppler
       - xrandr
-      # Term session recording
       - xwd # Wont need after bug fix
-      - ttygif
-      - ttyrec
       - exfat-utils
-      # mail client
-      - claws-mail
-      - claws-mail-fancy
-      - claws-mail-archiver
       - en-hunspell
       - newsboat
       # Fonts
@@ -74,6 +67,13 @@ removed_desktop_pkgs:
       - newsbeuter  # Moving to newsboat
       - xpdf  # xpdf 4.x requires qt5, staying on xpdf3
       - xpdf3 # Found a better alternative in zathura
+      # moving away from claws-mail client
+      - claws-mail
+      - claws-mail-fancy
+      - claws-mail-archiver
+      # remove Term session recording
+      - ttygif
+      - ttyrec
     - require:
       - sls: pkgng
 
