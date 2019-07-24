@@ -30,7 +30,7 @@ desktop_pkgs:
       # Image viewer
       - viewnior
       # Picture stuff
-      - ImageMagick
+      - ImageMagick7
       - darktable
       - ufraw
       # PDF Viewer
