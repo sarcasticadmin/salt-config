@@ -2,9 +2,9 @@
   url: "{{ url }}"
   mirror_type: "{{ mirror_type }}",
   signature_type: "{{ signature_type }}",
-  {% if signature_type == "pubkey" %}
+  {% if signature_type == "pubkey" -%}
   pubkey: "{{ pubkey }}",
-  {% endif %}
+  {% endif -%}
   fingerprints: "{{ fingerprints }}",
   enabled: {{ enabled }},
   priority: {{ priority }}
