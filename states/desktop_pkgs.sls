@@ -17,6 +17,7 @@ desktop_pkgs:
       - feh
       - slim
       - xosd
+      - mons # Finally!
       # Browsers
       - firefox
       - chromium
