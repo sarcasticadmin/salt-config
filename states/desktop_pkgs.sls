@@ -18,6 +18,7 @@ desktop_pkgs:
       - slim
       - xosd
       - mons # Finally!
+      - xsel-conrad # pbcopy
       # Browsers
       - firefox
       - chromium
