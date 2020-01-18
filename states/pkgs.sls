@@ -26,6 +26,7 @@ pkg_list:
       - cloc
       - nmap
       - aria2
+      - py37-pipx
     - require:
       - sls: pkgng
       - pkg: removed_pkgs
