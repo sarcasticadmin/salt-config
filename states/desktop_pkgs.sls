@@ -51,6 +51,7 @@ desktop_pkgs:
       - libqrencode
       - gomplate
       - hub
+      - kermit
     - require:
       - sls: pkgs
       - pkg: removed_desktop_pkgs
