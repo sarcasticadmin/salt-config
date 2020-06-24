@@ -17,6 +17,8 @@ desktop_pkgs:
       - feh
       - slim
       - xosd
+      - mons # Finally!
+      - xsel-conrad # pbcopy
       # Browsers
       - firefox
       - chromium
@@ -49,6 +51,7 @@ desktop_pkgs:
       - libqrencode
       - gomplate
       - hub
+      - kermit
     - require:
       - sls: pkgs
       - pkg: removed_desktop_pkgs
